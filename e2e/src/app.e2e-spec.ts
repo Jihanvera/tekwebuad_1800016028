@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('tekweb1800016028 app is running!');
+    expect(page.getTitleText()).toEqual('tekweb app is running!');
   });
 
   afterEach(async () => {

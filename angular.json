@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tekweb1800016028": {
+    "tekweb": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tekweb1800016028",
+            "outputPath": "dist/tekweb",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "tekweb1800016028:build"
+            "browserTarget": "tekweb:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "tekweb1800016028:build:production"
+              "browserTarget": "tekweb:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tekweb1800016028:build"
+            "browserTarget": "tekweb:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "tekweb1800016028:serve"
+            "devServerTarget": "tekweb:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "tekweb1800016028:serve:production"
+              "devServerTarget": "tekweb:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "tekweb1800016028"
+  "defaultProject": "tekweb"
 }
